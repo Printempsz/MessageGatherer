@@ -7,9 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Workerman\\' => array($vendorDir . '/workerman/workerman'),
+    'QL\\' => array($vendorDir . '/jaeger/querylist'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
+    'Beanbun\\Middleware\\' => array($vendorDir . '/kiddyu/beanbun-parser/src'),
     'Beanbun\\' => array($vendorDir . '/kiddyu/beanbun/src'),
 );

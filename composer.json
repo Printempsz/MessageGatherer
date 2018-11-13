@@ -1,5 +1,6 @@
 {
     "require": {
-        "kiddyu/beanbun": "^1.0"
+        "kiddyu/beanbun": "^1.0",
+        "kiddyu/beanbun-parser": "^0.0.1"
     }
 }

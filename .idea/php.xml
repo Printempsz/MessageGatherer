@@ -9,6 +9,9 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/workerman/workerman" />
+      <path value="$PROJECT_DIR$/vendor/kiddyu/beanbun-parser" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/phpquery-single" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/querylist" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

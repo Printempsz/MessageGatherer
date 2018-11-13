@@ -6,7 +6,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jaeger/phpquery-single" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jaeger/querylist" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kiddyu/beanbun" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kiddyu/beanbun-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/workerman/workerman" />
     </content>

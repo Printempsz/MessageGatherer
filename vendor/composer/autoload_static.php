@@ -17,6 +17,10 @@ class ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88
         array (
             'Workerman\\' => 10,
         ),
+        'Q' => 
+        array (
+            'QL\\' => 3,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -29,6 +33,7 @@ class ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88
         ),
         'B' => 
         array (
+            'Beanbun\\Middleware\\' => 19,
             'Beanbun\\' => 8,
         ),
     );
@@ -37,6 +42,10 @@ class ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88
         'Workerman\\' => 
         array (
             0 => __DIR__ . '/..' . '/workerman/workerman',
+        ),
+        'QL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaeger/querylist',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -54,10 +63,30 @@ class ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Beanbun\\Middleware\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kiddyu/beanbun-parser/src',
+        ),
         'Beanbun\\' => 
         array (
             0 => __DIR__ . '/..' . '/kiddyu/beanbun/src',
         ),
+    );
+
+    public static $classMap = array (
+        'Callback' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackBody' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackParam' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackParameterToReference' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackReturnReference' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackReturnValue' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'DOMDocumentWrapper' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'DOMEvent' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'ICallbackNamed' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'phpQuery' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'phpQueryEvents' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'phpQueryObject' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'phpQueryPlugins' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -65,6 +94,7 @@ class ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit15fc160414cfec68a6a4265c39cb5e88::$classMap;
 
         }, null, ClassLoader::class);
     }
