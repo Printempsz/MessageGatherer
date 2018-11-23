@@ -6,12 +6,14 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jaeger/g-http" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jaeger/phpquery-single" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jaeger/querylist" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/kiddyu/beanbun" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/kiddyu/beanbun-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/workerman/workerman" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tightenco/collect" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
