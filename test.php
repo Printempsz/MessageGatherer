@@ -50,4 +50,4 @@ foreach ($focusInfo as $key => $info) {
     $focusInfo[$key] = substr_replace($info,','.'"url":'.'"'.$temp[$key].'"'.'}',-1);
 }
 
-print_r($focusInfo);
+//print_r($focusInfo);
