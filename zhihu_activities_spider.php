@@ -6,8 +6,11 @@
  * Time: 20:41
  */
 
+use QL\QueryList;
+
 class zhihu_activities_spider implements spider_interface
 {
+
     public function work($seed)
     {
         // TODO: Implement work() method.

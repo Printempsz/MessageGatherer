@@ -6,12 +6,26 @@
  * Time: 20:38
  */
 
+use QL\QueryList;
 
 //知乎文章的爬虫
 class zhihu_article_spider implements spider_interface
 {
+    private $ql;
+
+    public function __construct($headers)
+    {
+        $this->headers = ['headers' => $headers];
+    }
+
+    /**
+     * @param $seed
+     * @deprecated 爬虫工作的主函数
+     * @return \QL\Dom\Elements
+     */
     public function work($seed)
     {
-        // TODO: Implement work() method.
+        $this->ql = QueryList::get($seed,[],$this->headers);
+        return $this->ql->find('#root > div > main > div > article > div:nth-child(2) > div');
     }
 }
