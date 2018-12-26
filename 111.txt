@@ -1,3 +1,7 @@
+merge:<<<<<<< HEAD
 asdfxxxxx
+=
+asdfyyyyyy
+rebase:>>>>>>> yyyy
 
 asdfadf
