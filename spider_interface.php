@@ -8,5 +8,4 @@
 
 interface spider_interface {
     public function work($seed);
-
 }

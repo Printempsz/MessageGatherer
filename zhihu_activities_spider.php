@@ -6,13 +6,15 @@
  * Time: 20:41
  */
 
+require_once 'spider_factory.php';
+
 use QL\QueryList;
 
 class zhihu_activities_spider implements spider_interface
 {
-
     public function work($seed)
     {
-        // TODO: Implement work() method.
+        $this->ql = QueryList::get($seed,$this->headers);
+        return $this->ql->find();
     }
 }

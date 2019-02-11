@@ -36,7 +36,7 @@ $imgs = $ql->find('img')->attrs('*')->all();
 
 //选择关注的内容的基本信息
 $focusInfo = $ql->find('.List-item .ContentItem.ArticleItem')->attrs('data-zop')->all();
-//print_r($focusInfo);
+print_r($focusInfo);
 
 //选择关注内容的url
 $focusUrl = $ql->find('#Profile-activities > div > div > div.ContentItem.ArticleItem > meta')->attrs('content');
@@ -54,4 +54,4 @@ foreach ($focusInfo as $key => $info) {
 //    $content[] = $article_helper->getArticleContent($urls[$key]);
 }
 
-print_r($focusInfo);
+//print_r($focusInfo);

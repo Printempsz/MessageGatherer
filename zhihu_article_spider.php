@@ -6,6 +6,8 @@
  * Time: 20:38
  */
 
+require_once 'spider_interface.php';
+
 use QL\QueryList;
 
 //知乎文章的爬虫
@@ -26,6 +28,7 @@ class zhihu_article_spider implements spider_interface
     public function work($seed)
     {
         $this->ql = QueryList::get($seed,[],$this->headers);
-        return $this->ql->find('#root > div > main > div > article > div:nth-child(2) > div');
+//        return $this->ql->find('#root > div > main > div > article > div:nth-child(2) > div');
+
     }
 }
