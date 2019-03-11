@@ -12,8 +12,9 @@
         "fideloper/proxy": "^4.0",
         "fukuball/jieba-php": "dev-master",
         "jaeger/querylist": "^4.1",
-        "laravel/framework": "5.8.*",
+        "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
+        "noh4ck/graphiql": "@dev",
         "overtrue/laravel-lang": "~3.0",
         "rebing/graphql-laravel": "^1.20",
         "webonyx/graphql-php": "^0.13.1"
