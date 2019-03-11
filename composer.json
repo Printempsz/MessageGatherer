@@ -14,7 +14,9 @@
         "jaeger/querylist": "^4.1",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "overtrue/laravel-lang": "~3.0"
+        "overtrue/laravel-lang": "~3.0",
+        "rebing/graphql-laravel": "^1.20",
+        "webonyx/graphql-php": "^0.13.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
