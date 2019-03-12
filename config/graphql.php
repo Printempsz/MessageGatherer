@@ -100,9 +100,13 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
+                'users' => App\GraphQL\Query\UsersQuery::class,
+                'jobs'  => App\GraphQl\Query\JobsQuery::class
                 // 'example_query' => ExampleQuery::class,
             ],
             'mutation' => [
+                'createJob' => App\GraphQL\Mutation\CreateJobMutation::class,
+                'createUser' => App\GraphQL\Mutation\CreateUserMutation::class,
                 // 'example_mutation'  => ExampleMutation::class,
             ],
             'middleware' => [],
@@ -120,6 +124,8 @@ return [
     // ]
     //
     'types' => [
+        'user' => App\GraphQL\Type\UserType::class,
+        'job'  => App\GraphQL\Type\JobType::class
         // 'example'           => ExampleType::class,
         // 'relation_example'  => ExampleRelationType::class,
     ],

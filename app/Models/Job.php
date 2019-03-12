@@ -1,16 +1,14 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Job extends Model
 {
-    //一对多关联
-    public function job()
-    {
-        return $this->hasMany('App\Models\Job');
-    }
+    protected $fillable = [
+        'name', 'description', 'requirement','picture','salary','location','user_id'
+    ];
 
     public function user()
     {
