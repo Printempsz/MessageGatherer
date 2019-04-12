@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/cache/filesystem-adapter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cache/tag-interop" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fukuball/jieba-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />

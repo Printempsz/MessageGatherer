@@ -190,6 +190,58 @@
         ]
     },
     {
+        "name": "fukuball/jieba-php",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fukuball/jieba-php.git",
+            "reference": "d17ed145c328375bb54ac99d824c63e320830138"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fukuball/jieba-php/zipball/d17ed145c328375bb54ac99d824c63e320830138",
+            "reference": "d17ed145c328375bb54ac99d824c63e320830138",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">= 5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~5.7|~6.0",
+            "satooshi/php-coveralls": "dev-master",
+            "squizlabs/php_codesniffer": "1.5.6"
+        },
+        "time": "2018-09-11T04:31:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/class/Jieba.php",
+                "src/class/JiebaAnalyse.php",
+                "src/class/Finalseg.php",
+                "src/class/Posseg.php",
+                "src/vendor/multi-array/MultiArray.php",
+                "src/vendor/multi-array/Factory/MultiArrayFactory.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "fukuball",
+                "email": "fukuball@gmail.com"
+            }
+        ],
+        "description": "結巴中文分詞（PHP 版本）：做最好的 PHP 中文分詞、中文斷詞組件",
+        "keywords": [
+            "Jieba",
+            "php"
+        ]
+    },
+    {
         "name": "guzzlehttp/guzzle",
         "version": "6.3.3",
         "version_normalized": "6.3.3.0",
@@ -419,23 +471,23 @@
     },
     {
         "name": "jaeger/phpquery-single",
-        "version": "0.9.9",
-        "version_normalized": "0.9.9.0",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/jae-jae/phpQuery-single.git",
-            "reference": "6c12e3a1648dc619f16920f96082f397d74e0127"
+            "reference": "2d607a2bcfd8bcf5c42e83d6c66fedaf397c7c3f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/jae-jae/phpQuery-single/zipball/6c12e3a1648dc619f16920f96082f397d74e0127",
-            "reference": "6c12e3a1648dc619f16920f96082f397d74e0127",
+            "url": "https://api.github.com/repos/jae-jae/phpQuery-single/zipball/2d607a2bcfd8bcf5c42e83d6c66fedaf397c7c3f",
+            "reference": "2d607a2bcfd8bcf5c42e83d6c66fedaf397c7c3f",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2017-12-07T02:13:37+00:00",
+        "time": "2019-02-22T07:27:45+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -464,22 +516,22 @@
     },
     {
         "name": "jaeger/querylist",
-        "version": "V4.1.0",
-        "version_normalized": "4.1.0.0",
+        "version": "V4.1.1",
+        "version_normalized": "4.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/jae-jae/QueryList.git",
-            "reference": "df9e3bbf1943b77ac7ab91bd3fc59643fe458044"
+            "reference": "46f564bc8b1a22b5dca7cd690b4af76e919b39f7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/jae-jae/QueryList/zipball/df9e3bbf1943b77ac7ab91bd3fc59643fe458044",
-            "reference": "df9e3bbf1943b77ac7ab91bd3fc59643fe458044",
+            "url": "https://api.github.com/repos/jae-jae/QueryList/zipball/46f564bc8b1a22b5dca7cd690b4af76e919b39f7",
+            "reference": "46f564bc8b1a22b5dca7cd690b4af76e919b39f7",
             "shasum": ""
         },
         "require": {
             "jaeger/g-http": "^1.1",
-            "jaeger/phpquery-single": "^0.9",
+            "jaeger/phpquery-single": "^1",
             "php": ">=7.0",
             "tightenco/collect": "^5"
         },
@@ -487,7 +539,7 @@
             "phpunit/phpunit": "^7.5",
             "symfony/var-dumper": "^3.3"
         },
-        "time": "2018-12-12T07:29:31+00:00",
+        "time": "2019-02-22T07:33:54+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -515,17 +567,17 @@
     },
     {
         "name": "league/flysystem",
-        "version": "1.0.50",
-        "version_normalized": "1.0.50.0",
+        "version": "1.0.51",
+        "version_normalized": "1.0.51.0",
         "source": {
             "type": "git",
             "url": "https://github.com/thephpleague/flysystem.git",
-            "reference": "dab4e7624efa543a943be978008f439c333f2249"
+            "reference": "755ba7bf3fb9031e6581d091db84d78275874396"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/dab4e7624efa543a943be978008f439c333f2249",
-            "reference": "dab4e7624efa543a943be978008f439c333f2249",
+            "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/755ba7bf3fb9031e6581d091db84d78275874396",
+            "reference": "755ba7bf3fb9031e6581d091db84d78275874396",
             "shasum": ""
         },
         "require": {
@@ -555,7 +607,7 @@
             "spatie/flysystem-dropbox": "Allows you to use Dropbox storage",
             "srmklive/flysystem-dropbox-v2": "Allows you to use Dropbox storage for PHP 5 applications"
         },
-        "time": "2019-02-01T08:50:36+00:00",
+        "time": "2019-03-30T13:22:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -842,17 +894,17 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.10.0",
-        "version_normalized": "1.10.0.0",
+        "version": "v1.11.0",
+        "version_normalized": "1.11.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+            "reference": "fe5e94c604826c35a32fa832f35bd036b6799609"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
-            "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fe5e94c604826c35a32fa832f35bd036b6799609",
+            "reference": "fe5e94c604826c35a32fa832f35bd036b6799609",
             "shasum": ""
         },
         "require": {
@@ -861,11 +913,11 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2018-09-21T13:07:52+00:00",
+        "time": "2019-02-06T07:57:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.9-dev"
+                "dev-master": "1.11-dev"
             }
         },
         "installation-source": "dist",
@@ -903,27 +955,27 @@
     },
     {
         "name": "symfony/polyfill-php72",
-        "version": "v1.10.0",
-        "version_normalized": "1.10.0.0",
+        "version": "v1.11.0",
+        "version_normalized": "1.11.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php72.git",
-            "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631"
+            "reference": "ab50dcf166d5f577978419edd37aa2bb8eabce0c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
-            "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
+            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/ab50dcf166d5f577978419edd37aa2bb8eabce0c",
+            "reference": "ab50dcf166d5f577978419edd37aa2bb8eabce0c",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2018-09-21T13:07:52+00:00",
+        "time": "2019-02-06T07:57:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.9-dev"
+                "dev-master": "1.11-dev"
             }
         },
         "installation-source": "dist",
@@ -960,17 +1012,17 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v4.2.3",
-        "version_normalized": "4.2.3.0",
+        "version": "v4.2.5",
+        "version_normalized": "4.2.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "223bda89f9be41cf7033eeaf11bc61a280489c17"
+            "reference": "9f87189ac10b42edf7fb8edc846f1937c6d157cf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/223bda89f9be41cf7033eeaf11bc61a280489c17",
-            "reference": "223bda89f9be41cf7033eeaf11bc61a280489c17",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/9f87189ac10b42edf7fb8edc846f1937c6d157cf",
+            "reference": "9f87189ac10b42edf7fb8edc846f1937c6d157cf",
             "shasum": ""
         },
         "require": {
@@ -993,7 +1045,7 @@
             "ext-intl": "To show region name in time zone dump",
             "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
         },
-        "time": "2019-01-30T11:44:30+00:00",
+        "time": "2019-02-23T15:17:42+00:00",
         "bin": [
             "Resources/bin/var-dump-server"
         ],
@@ -1038,17 +1090,17 @@
     },
     {
         "name": "tightenco/collect",
-        "version": "v5.7.25",
-        "version_normalized": "5.7.25.0",
+        "version": "v5.8.10",
+        "version_normalized": "5.8.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/tightenco/collect.git",
-            "reference": "bcdb1d4ca989a3aaa74aeac67c8e44ccf1761b9d"
+            "reference": "1e4120c90b3536a9ebd080d50ecaae7b75719054"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/tightenco/collect/zipball/bcdb1d4ca989a3aaa74aeac67c8e44ccf1761b9d",
-            "reference": "bcdb1d4ca989a3aaa74aeac67c8e44ccf1761b9d",
+            "url": "https://api.github.com/repos/tightenco/collect/zipball/1e4120c90b3536a9ebd080d50ecaae7b75719054",
+            "reference": "1e4120c90b3536a9ebd080d50ecaae7b75719054",
             "shasum": ""
         },
         "require": {
@@ -1060,7 +1112,7 @@
             "nesbot/carbon": "^1.26.3",
             "phpunit/phpunit": "^7.0"
         },
-        "time": "2019-02-05T15:00:41+00:00",
+        "time": "2019-04-02T20:31:59+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

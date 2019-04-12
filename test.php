@@ -1,57 +1,51 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: zhanghaolan(zhanghaolan@zuoyebang.com)
- * Date: 2018/11/23
- * Time: 19:58
+ * User: zhl19
+ * Date: 2019/4/6
+ * Time: 15:29
  */
 
 require 'vendor/autoload.php';
-//require_once 'Zhihu_Article_Getter.php';
-use QL\QueryList;
+require 'Segmentation.php';
 
+//use QL\QueryList;
+//
+//
+//$domain = 'zhuanlan.zhihu.com';
+//$headers = [
+//    'host' => $domain,
+//    'authority' => 'zhuanlan.zhihu.com',
+//    "user-agent" => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+//    'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+//    'cookie' => '_zap=9a3ca75c-f200-41d2-b20d-d9908815e813; _xsrf=2vS10VVjVwKGHv4RgT92pdaaElE7PUVr; d_c0="AMBg-NoN9w6PTkvqURiINW2SQ4BIbd8MgVs=|1549877690"; z_c0="2|1:0|10:1549877694|4:z_c0|92:Mi4xTnN3d0FnQUFBQUFBd0dENDJnMzNEaVlBQUFCZ0FsVk52bzlPWFFBb0hLMjhCUHhOYzgyelUtb0JhSmpwd2l2aGR3|22aed38c0be78913a75f22394329bc9a46dae70d5b6c6a96bc26f492188883bf"; q_c1=ab91798c4e6f493eb47b61987173b269|1551675335000|1551675335000; tgw_l7_route=a37704a413efa26cf3f23813004f1a3b'
+//];
+//
+//$chan = new Swoole\Coroutine\Channel(2);
 
-//TODO
-//下载所有img(或者记录url)
-//TODO
-//使用选择器选出所有的关注内容，存json
-//TODO
-//正则匹配关注内容中的url，过滤器，加队列BFS
+//echo microtime(true).'-----------------1--------start'.PHP_EOL;
+go(function () use ($domain,$headers,$chan) {
+//    $cli = new Swoole\Coroutine\Http2\Client($domain, 443, true);
+//    $cli->set([
+//        'timeout' => -1,
+//        'ssl_host_name' => $domain
+//    ]);
+//    $cli->connect();
+//    $req = new swoole_http2_request;
+//    $req->method = 'GET';
+////    $req->path = '/p/44593798';
+//    $req->path = '/p/20577638';
+//    $req->headers = $headers;
+//    $cli->send($req);
+//    $response = $cli->recv();
+//
+//    $data = QueryList::html($response->data)->find('#root > div > main > div > article > div:nth-child(2) > div')->text();
 
-$headers = [
-    'Cookie' => '_zap=28bea275-ab69-4f7e-8841-b1a0c3629924; d_c0="AKDihtwCgg6PTtR_E926JXEplub-Ite6sxE=|1542023071"; q_c1=0c83bc8b169042e0872cc8c863a43801|1542023072000|1542023072000; capsion_ticket="2|1:0|10:1542074085|14:capsion_ticket|44:ZjQ1MDIyZTU1NGQ0NDk5MmE4ODI1NDAzMzdmM2NmMWU=|b57628f4da366c83ea7f80bfd20b6eb82d64674e9a1beca1cf586fda0c2bf0be"; z_c0="2|1:0|10:1542074086|4:z_c0|92:Mi4xTnN3d0FnQUFBQUFBb09LRzNBS0NEaVlBQUFCZ0FsVk41bnpYWEFEMnVQblBKLWRFMHRGS2tZQnVGYTVUckxyN1R3|23455ad185e3cc342382bc63c189c864f8c5aeef706e5e041d9d258082e9b2a4"; tst=r; __utma=155987696.1408205289.1542074341.1542074341.1542074341.1; __utmz=155987696.1542074341.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _xsrf=qab6ySNKdTmyt2rJA7C8DjbQbU54vhS1; tgw_l7_route=56f3b730f2eb8b75242a8095a22206f8',
-    'Referer' => 'https://www.zhihu.com',
-    'Origin' => 'https://www.zhihu.com'
-];
-$ql = QueryList::get('https://www.zhihu.com/people/leslie1214/activities',[
-],[
-    'headers' => $headers,
-]);
-//echo $ql->getHtml();
+    $data = '我在电子科大刷知乎看到了一个关于nlp的论文';
+//    $data = '李小福是创新办主任也是云计算方面的专家';
+//    $out = Segmentation::cut($data,0);
+    $out = Segmentation::extractTags($data,5);
+    echo $data.PHP_EOL;
+    print_r($out);
+});
 
-//记录页面中所有的img
-$imgs = $ql->find('img')->attrs('*')->all();
-//print_r($imgs);
-
-
-//选择关注的内容的基本信息
-$focusInfo = $ql->find('.List-item .ContentItem.ArticleItem')->attrs('data-zop')->all();
-print_r($focusInfo);
-
-//选择关注内容的url
-$focusUrl = $ql->find('#Profile-activities > div > div > div.ContentItem.ArticleItem > meta')->attrs('content');
-$urls = [];
-foreach ($focusUrl as $url) {
-    if(strstr($url,'https:////')) {
-        $url = str_replace('https:////','https://',$url);
-        $urls[] = $url;
-    }
-}
-//将url写入json
-//$article_helper = new \Zhihu_Article_Getter($headers);
-foreach ($focusInfo as $key => $info) {
-    $focusInfo[$key] = substr_replace($info,','.'"url":'.'"'.$urls[$key].'"'.'}',-1);
-//    $content[] = $article_helper->getArticleContent($urls[$key]);
-}
-
-//print_r($focusInfo);

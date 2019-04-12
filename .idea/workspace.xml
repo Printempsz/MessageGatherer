@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="011fd373-1b15-4f12-bb5c-a50897e87e39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CommonHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zhihu_spider.php" afterDir="false" />
+    <list default="true" id="011fd373-1b15-4f12-bb5c-a50897e87e39" name="Default Changelist" comment="sync">
+      <change afterPath="$PROJECT_DIR$/Segmentation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MessageGatherer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MessageGatherer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider_interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/spider_interface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zhihu_Article_Getter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Zhihu_Article_Getter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhihu_activities_spider.php" beforeDir="false" afterPath="$PROJECT_DIR$/zhihu_activities_spider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhihu_article_spider.php" beforeDir="false" afterPath="$PROJECT_DIR$/zhihu_article_spider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jaeger/phpquery-single/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jaeger/phpquery-single/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jaeger/phpquery-single/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jaeger/phpquery-single/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jaeger/phpquery-single/phpQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jaeger/phpquery-single/phpQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jaeger/querylist/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jaeger/querylist/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/Php72.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/Php72.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DoctrineCaster.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DoctrineCaster.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Stub.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Stub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/VarCloner.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/VarCloner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tightenco/collect/src/Collect/Support/Arr.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tightenco/collect/src/Collect/Support/Arr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tightenco/collect/src/Collect/Support/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tightenco/collect/src/Collect/Support/Collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tightenco/collect/src/Collect/Support/Traits/Macroable.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tightenco/collect/src/Collect/Support/Traits/Macroable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportArrTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportArrTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportCarbonTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportCarbonTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportCollectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportCollectionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportMacroableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tightenco/collect/tests/Support/SupportMacroableTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +51,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -30,68 +64,50 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MessageGather@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MessageGather@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MessageGather@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="MessageGather: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-276188648">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.6" value="3" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="json" value="1" />
-          <entry key="lock" value="1" />
-          <entry key="php" value="12" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JSON" value="2" />
-          <entry key="PHP" value="12" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="php" value="1233" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PHP" value="1233" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.new.class">
-        <counts>
-          <entry key="PHP Class.type" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test.php">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Segmentation.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#6#85#0#PHP" expanded="true" />
+                    <element signature="e#121#146#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Zhihu_Article_Getter.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="684">
-                  <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+                <state relative-caret-position="408">
+                  <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#6#120#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -101,49 +117,22 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spider_interface.php">
+            <entry file="file://$PROJECT_DIR$/conf_file.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#6#120#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/zhihu_activities_spider.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/zhihu_article_spider.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="31" selection-start-line="31" selection-end-line="31" />
+                <state relative-caret-position="340">
+                  <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/zhihu_spider.php">
+            <entry file="file://$PROJECT_DIR$/test.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="756">
-                  <caret line="47" selection-start-line="47" selection-end-line="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CommonHelper.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+                <state relative-caret-position="735">
+                  <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#6#85#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -155,6 +144,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>find</find>
+      <find>电子科技大学</find>
+      <find>电子</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,22 +157,23 @@
         <option value="$PROJECT_DIR$/zhihu_activities.php" />
         <option value="$PROJECT_DIR$/zhihu_item_spider.php" />
         <option value="$PROJECT_DIR$/test1.php" />
-        <option value="$PROJECT_DIR$/Zhihu_Article_Getter.php" />
         <option value="$PROJECT_DIR$/spider_factory.php" />
         <option value="$PROJECT_DIR$/spider_interface.php" />
         <option value="$PROJECT_DIR$/zhihu_activities_spider.php" />
         <option value="$PROJECT_DIR$/zhihu_article_spider.php" />
         <option value="$PROJECT_DIR$/CommonHelper.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/zhihu_spider.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/url_conf_file.php" />
+        <option value="$PROJECT_DIR$/conf_file.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/user_dict.txt" />
+        <option value="$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/dict.txt" />
+        <option value="$PROJECT_DIR$/Segmentation.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/Zhihu_Article_Getter.php" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -205,12 +197,17 @@
       <path value="$PROJECT_DIR$/vendor/cache/filesystem-adapter" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/fukuball/jieba-php" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="993" />
+    <option name="x" value="68" />
+    <option name="y" value="-8" />
+    <option name="width" value="1860" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -229,6 +226,27 @@
               <item name="MessageGatherer" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MessageGatherer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageGatherer" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="fukuball" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MessageGatherer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageGatherer" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="fukuball" type="462c0819:PsiDirectoryNode" />
+              <item name="jieba-php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MessageGatherer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageGatherer" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="fukuball" type="462c0819:PsiDirectoryNode" />
+              <item name="jieba-php" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -239,10 +257,11 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -281,18 +300,30 @@
       <workItem from="1549606649794" duration="998000" />
       <workItem from="1549607666881" duration="6757000" />
       <workItem from="1549868448144" duration="33000" />
-      <workItem from="1549868522360" duration="614000" />
+      <workItem from="1549868522360" duration="3027000" />
+      <workItem from="1550043883802" duration="599000" />
+      <workItem from="1550052009205" duration="599000" />
+      <workItem from="1554367760870" duration="67000" />
+      <workItem from="1554367844531" duration="615000" />
+      <workItem from="1554461140953" duration="92000" />
+      <workItem from="1554533989140" duration="1450000" />
+      <workItem from="1554648084500" duration="1861000" />
+      <workItem from="1554693296284" duration="373000" />
+      <workItem from="1554693747788" duration="16031000" />
+      <workItem from="1554863665463" duration="12706000" />
+      <workItem from="1554957053021" duration="1003000" />
+      <workItem from="1555043872247" duration="1053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25555000" />
+    <option name="totallyTimeSpent" value="64417000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="-8" width="1860" height="1096" extended-state="7" />
+    <frame x="68" y="-8" width="1860" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13111112" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15427303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,13 +336,15 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49778023" weight="0.32746115" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50221974" side_tool="true" weight="0.32746115" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4972253" weight="0.29192546" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5027747" side_tool="true" weight="0.32712215" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32953367" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.34265012" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32931727" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3290788" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12650603" />
@@ -339,8 +372,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4678afe-a7e0-43aa-8a14-6c0a5cc5cfc3/console.sql" />
@@ -365,24 +399,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jaeger/querylist/src/QueryList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5562">
-          <caret line="309" column="36" selection-start-line="309" selection-start-column="36" selection-end-line="309" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_files.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
@@ -406,41 +423,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
+    <entry file="file://$PROJECT_DIR$/zhihu_spider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="756">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zhihu_Article_Getter.php">
+    <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider_interface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#120#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu_activities_spider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu_article_spider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="5562">
+          <caret line="309" column="32" selection-start-line="309" selection-start-column="32" selection-end-line="309" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -451,10 +444,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhihu_spider.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihu_article_spider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihu_activities_spider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider_interface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="e#6#120#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jaeger/querylist/src/Dom/Elements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="91" column="3" selection-start-line="91" selection-start-column="3" selection-end-line="91" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jaeger/querylist/src/QueryList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6137685-0599-42b8-a75c-70831af8fc9b/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/dict.big.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10341353" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="240959" column="8" lean-forward="true" selection-start-line="240959" selection-start-column="8" selection-end-line="240959" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/pos_tag_readable.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/dict.txt.cache.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/dict.txt.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/stop_words.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/dict/user_dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf_file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f6137685-0599-42b8-a75c-70831af8fc9b/schema/MessageGather/table/zhihu_articles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fukuball/jieba-php/src/class/Jieba.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3910">
+          <caret line="241" column="30" lean-forward="true" selection-start-line="241" selection-start-column="30" selection-end-line="241" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Segmentation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#121#146#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zhihu_Article_Getter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#120#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

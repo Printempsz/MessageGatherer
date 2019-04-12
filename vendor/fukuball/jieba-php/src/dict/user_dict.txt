@@ -1,0 +1,6 @@
+云计算 5 n
+李小福 2 nr
+创新办 3 i
+easy_install 3 eng
+好用 120 adj
+电子科大 1000 ns

@@ -7,38 +7,98 @@
  */
 
 require 'vendor/autoload.php';
+require 'Segmentation.php';
+require 'conf_file.php';
+
 use QL\QueryList;
 
-//TODO
-//下载所有img(或者记录url)
-//TODO
-//使用选择器选出所有的关注内容，存json
-//TODO
-//正则匹配关注内容中的url，过滤器，加队列BFS
+$urlConf = ConfFile::$urlConf;
 
-class Zhihu_Article_Getter
-{
-    private $headers = [];
-    private $ql = null;
+//zhihu_article
+$conf = $urlConf['zhihu_article'];
+$domain = 'zhuanlan.zhihu.com';
+$headers = [
+    'host' => $domain,
+    'authority' => 'zhuanlan.zhihu.com',
+    "user-agent" => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+    'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'cookie' => '_zap=9a3ca75c-f200-41d2-b20d-d9908815e813; _xsrf=2vS10VVjVwKGHv4RgT92pdaaElE7PUVr; d_c0="AMBg-NoN9w6PTkvqURiINW2SQ4BIbd8MgVs=|1549877690"; z_c0="2|1:0|10:1549877694|4:z_c0|92:Mi4xTnN3d0FnQUFBQUFBd0dENDJnMzNEaVlBQUFCZ0FsVk52bzlPWFFBb0hLMjhCUHhOYzgyelUtb0JhSmpwd2l2aGR3|22aed38c0be78913a75f22394329bc9a46dae70d5b6c6a96bc26f492188883bf"; q_c1=ab91798c4e6f493eb47b61987173b269|1551675335000|1551675335000; tgw_l7_route=a37704a413efa26cf3f23813004f1a3b'
+];
+$count_conf = count($conf);
+$chan = new Swoole\Coroutine\Channel(count($conf));
+foreach ($conf as $id) {
+    go(function () use ($domain,$headers,$chan,$id) {
+        $url = '/p/'.$id;
+        $cli = new Swoole\Coroutine\Http2\Client($domain,443,true);
+        $cli->set([
+            'timeout' => -1,
+            'ssl_host_name' => $domain
+        ]);
+        $cli->connect();
+        $req = new swoole_http2_request;
+        $req->method = 'GET';
+        $req->path = $url;
+        $req->headers = $headers;
+        $cli->send($req);
+        $response = $cli->recv();
+        $html = QueryList::html($response->data);
+        $text = $html->find('#root > div > main > div > article > div:nth-child(2) > div')->text();
+        $title = $html->find('#root > div > main > div > article > header > h1')->text();
+        $cover = $html->find('#root > div > main > div > img')->src;
+        if($cover == null) $cover = 'http://nwzimg.wezhan.cn/contents/sitefiles2002/10012495/images/606933.jpg';
+        $data = [
+            'id' => $id,
+            'url' => 'zhuanlan.zhihu.com'.$url,
+            'text' => $text,
+            'title' => $title,
+            'cover' => $cover,
+        ];
 
-    public function __construct($headers = [])
-    {
-        $this->headers = ['headers' => $headers];
-    }
-
-    /**
-     * @desc 返回文章内容
-     * @return \QL\Dom\Elements
-     */
-    public function getArticleContent($url) {
-        $this->ql = QueryList::get($url,[],$this->headers);
-        return $this->ql->find('#root > div > main > div > article > div:nth-child(2) > div');
-    }
+        $chan->push($data);
+    });
 }
 
-//$a = new Zhihu_Article_Getter([
-//    'Cookie' => '_zap=28bea275-ab69-4f7e-8841-b1a0c3629924; d_c0="AKDihtwCgg6PTtR_E926JXEplub-Ite6sxE=|1542023071"; q_c1=0c83bc8b169042e0872cc8c863a43801|1542023072000|1542023072000; capsion_ticket="2|1:0|10:1542074085|14:capsion_ticket|44:ZjQ1MDIyZTU1NGQ0NDk5MmE4ODI1NDAzMzdmM2NmMWU=|b57628f4da366c83ea7f80bfd20b6eb82d64674e9a1beca1cf586fda0c2bf0be"; z_c0="2|1:0|10:1542074086|4:z_c0|92:Mi4xTnN3d0FnQUFBQUFBb09LRzNBS0NEaVlBQUFCZ0FsVk41bnpYWEFEMnVQblBKLWRFMHRGS2tZQnVGYTVUckxyN1R3|23455ad185e3cc342382bc63c189c864f8c5aeef706e5e041d9d258082e9b2a4"; tst=r; __utma=155987696.1408205289.1542074341.1542074341.1542074341.1; __utmz=155987696.1542074341.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _xsrf=qab6ySNKdTmyt2rJA7C8DjbQbU54vhS1; tgw_l7_route=56f3b730f2eb8b75242a8095a22206f8',
-//    'Referer' => 'https://www.zhihu.com',
-//    'Origin' => 'https://www.zhihu.com'
-//]);
-//print_r($a->getArticleContent('https://zhuanlan.zhihu.com/p/25697617')->getString());
+//循环取通道里的数据
+go(function () use ($chan,$count_conf) {
+    $redis = new Swoole\Coroutine\Redis();
+    $redis->connect('127.0.0.1', 6379);
+
+    $mysql = new Swoole\Coroutine\Mysql();
+    $mysql->connect([
+        'host' => '127.0.0.1',
+        'port' => 3306,
+        'user' => 'root',
+        'password' => '',
+        'database' => 'MessageGather',
+    ]);
+    $count = 0;
+    while (1) {
+        $data = $chan->pop();
+        if(!empty($data)) {
+            $id = $data['id'];
+            $text = $data['text'];
+            $seg = Segmentation::extractTags($text,10);
+            $strSeg = implode(',',array_keys($seg));
+            $data['seg'] = ','.$strSeg.',';
+            $redis->hMset('zhihu_article_'.$id,$data);
+
+            $flag = $mysql->query("select id from zhihu_articles where article_id = $id");
+
+            if($flag == null) {
+                $sql = 'INSERT INTO zhihu_articles (article_id,url,title,text,seg,cover) VALUES (?,?,?,?,?,?)';
+                $stmt = $mysql->prepare($sql);
+                $stmt->execute([
+                    $data['id'],
+                    $data['url'],
+                    $data['title'],
+                    $data['text'],
+                    $data['seg'],
+                    $data['cover'],
+                ]);
+            }
+
+            $count ++;
+            if($count == $count_conf) break;
+        }
+    }
+});

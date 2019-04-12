@@ -1,5 +1,6 @@
 {
     "require": {
-        "jaeger/querylist": "^4.1"
+        "jaeger/querylist": "^4.1",
+        "fukuball/jieba-php": "dev-master"
     }
 }
